@@ -12,7 +12,6 @@
     &__container-fluid {
         max-width: 1920px;
         margin: 0 auto;
-        min-height: 100vh;
         background-image: url(../images/header-bg.png);
         background-position: right bottom;
         background-repeat: no-repeat;
@@ -20,6 +19,7 @@
     }
     
     ._container {
+        min-height: 100vh;
 
         display: flex;
         flex-direction: column;
@@ -193,6 +193,7 @@
 
 .header__social {
     display: flex;
+    padding-bottom: 20px;
 }
 
 .header__social-item {
@@ -208,5 +209,156 @@
 
     &:hover path {
         fill-opacity: 1;
+    }
+}
+
+
+// POPULAR ================================================
+
+
+.popular {
+    padding: 200px 0;
+}
+
+.popular__heading {
+    margin-bottom: 90px;
+}
+
+.popular__inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -50px -12.5px;
+
+    &:not(:last-child) {
+        padding-bottom: 100px;
+    }
+}
+
+.popular__column {
+    flex: 0 1 33.333%;
+    padding: 50px 12.5px;
+}
+
+.item-popular {
+    border-radius: 15px;
+    padding: 33px;
+    transition: background-color 0.2s, transform 0.3s;
+
+    &:hover {
+        background-color: #242C32;
+        backdrop-filter: blur(50px);
+        transform: translateY(-10px);
+    }
+
+    & > :not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
+.item-popular__header {
+    display: flex;
+
+}
+
+.item-popular__logo {
+
+}
+
+.item-popular__info {
+    margin-left: 30px;
+}
+
+.item-popular__name {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.59;
+    color: #E8E9EA;
+
+}
+
+.item-popular__price {
+    font-size: 18px;
+    line-height: 27px;
+    color: #9A6B32;
+}
+
+.item-popular__text {
+
+}
+
+.item-popular__footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-popular__footer-btns {
+    display: flex;
+}
+
+.item-popular__btn {
+    cursor: pointer;
+    padding: 12px 9px 3px;
+    border-radius: 8px;
+
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: #283036;
+    }
+}
+
+.item-popular__btn--follow {
+    &:hover path{
+        fill-opacity: 1;
+        fill: #FD3B41;
+    }
+    path {
+        transition: fill 0.3s, fill-opacity 0.3s;
+    }
+
+    &:not(:last-child) {
+        margin-right: 12px;
+    }
+
+    
+}
+
+.item-popular__btn--save {
+    &:hover path{
+        fill-opacity: 1;
+    }
+    path {
+        transition: fill-opacity 0.3s;
+    }
+}
+
+.item-popular__link {
+    border-radius: 8px;
+    padding: 9px 35px;
+    color: #FDF5FF;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: #FF6E30;
+    }
+}
+
+.popular__loadmore {
+    display: block;
+    color: #FF6E30;
+    border: 1px solid #484F53;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 17px 38px;
+    cursor: pointer;
+    width: 190px;
+    margin: 0 auto;
+    transition: background-color 0.2s, color 0.2s;
+
+    &:hover {
+        background-color: #FF6E30;
+        color: #FDF5FF;
     }
 }

@@ -4,10 +4,38 @@ body {
     line-height: 1.66;
     color: #CDCFD0;
     background-color: #1E252B;
+    overflow-x: hidden;
 }
 
 ._container {
     max-width: 1244px;
     padding: 0 10px;
     margin: 0 auto;
+}
+
+.heading {
+    max-width: 600px;
+}
+
+.heading--center {
+    text-align: center;
+    margin: 0 auto;
+
+    .heading__text {
+        margin: 0 auto;
+    }
+}
+
+.heading__title {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 130%;
+
+    &:not(:last-child) {
+        margin-bottom: 25px;
+    }
+}
+
+.heading__text {
+    max-width: 440px;
 }
