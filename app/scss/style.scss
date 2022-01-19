@@ -1,4 +1,5 @@
 @import 'reset';
+@import 'libs';
 @import 'fonts';
 @import 'global';
 
@@ -415,7 +416,7 @@
 }
 
 .updates__heading {
-    max-width: 400px;
+    max-width: 410px;
 
     &:not(:last-child) {
         margin-bottom: 50px;
@@ -463,4 +464,127 @@
 .updates__column {
     flex: 0 1 50%;
     padding: 25px 12px;
+}
+
+
+// TEAM ================================================
+
+
+.team {
+    margin: 200px 0;
+
+    .slick-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        cursor: pointer;
+
+        path {
+            transition: stroke 0.3s, stroke-opacity 0.3s;
+        }
+
+        &:hover path {
+            stroke-opacity: 1;
+            stroke: #FF6E30;
+        }
+    }
+
+    .slick-prev {
+        left: 0;
+    }
+
+    .slick-next {
+        right: 0;
+    }
+
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+
+        li {
+            margin: 0 8px;
+            font-size: 0;
+        }
+
+        .slick-active button {
+            background-color: #FF6E30;
+        }
+
+        button {
+            width: 44px;
+            height: 6px;
+            background-color: #283036;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+    }
+}
+
+.team__item {
+    display: flex;
+    justify-content: space-between;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.team__item-person {
+    position: relative;
+    flex: 0 1 400px;
+}
+
+.team__item-image {
+    background-image: url(../images/team/team-person-bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.team__item-person-info {
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    padding: 10px 22px 15px;
+    background: rgba(40, 48, 54, 0.2);
+    backdrop-filter: blur(50px);
+    border-radius: 8px;
+}
+
+.team__item-person-name {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 39px;
+    letter-spacing: 0.015em;
+    color: #CDCFD0;
+}
+
+.team__item-person-post {
+    font-size: 16px;
+    line-height: 24px;
+    color: #9A9DA0;
+}
+
+.team__item-text {
+    padding-top: 155px;
+    flex: 0 1 400px;
+    font-size: 14px;
+    line-height: 2.14;
+    letter-spacing: 0.015em;
+    color: #CDCFD0;
+
+    span {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url(../images/team/quotation-marks.svg);
+            top: -70px;
+            left: -55px;
+            width: 96px;
+            height: 96px;
+        }
+    }
 }
