@@ -39,3 +39,37 @@ body {
 .heading__text {
     max-width: 440px;
 }
+
+
+.search-box {
+    position: relative;
+}
+
+.search-box__input {
+    width: 100%;
+    background: #283036;
+    border-radius: 15px;
+    padding: 0 160px 0 66px;
+    height: 64px;
+    border: 1px solid #31373D;
+}
+
+.search-box__btn {
+    position: absolute;
+    right: 11px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 12px 35px;
+    background-color: #FF6E30;
+    border-radius: 8px;
+    color: #FDF5FF;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: darken(#FF6E30, 10);
+    }
+}
