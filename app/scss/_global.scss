@@ -52,6 +52,14 @@ body {
     padding: 0 160px 0 66px;
     height: 64px;
     border: 1px solid #31373D;
+
+    @media screen and (max-width: 400px) {
+        border-bottom-right-radius: 0;
+    }
+
+    @media screen and (max-width: 400px) {
+        padding: 0 10px 0 40px;
+    }
 }
 
 .search-box__btn {
@@ -71,5 +79,14 @@ body {
 
     &:hover {
         background-color: darken(#FF6E30, 10);
+    }
+
+    @media screen and (max-width: 400px) {
+        padding: 12px 70px;
+        position: static;
+        display: block;
+        transform: translateY(0);
+        margin-left: auto;
+        border-radius: 0 0 8px 8px;
     }
 }

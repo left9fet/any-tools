@@ -36,16 +36,54 @@
     font-size: 16px;
     line-height: 1.5;
     font-weight: 500;
+
+    @media screen and (max-width: 980px) {
+        flex-wrap: wrap;
+    }
+
+    @media screen and (max-width: 400px) {
+        justify-content: center;
+    }
+}
+
+.header__logo {
+    @media screen and (max-width: 400px) {
+        flex: 0 1 100%;
+        margin-bottom: 20px;
+
+        img {
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+}
+
+.menu {
+    @media screen and (max-width: 980px) {
+        flex: 0 1 100%;
+        order: 1;
+        margin-top: 30px;
+    }
 }
 
 .menu__list {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: -5px 0;
+
+    @media screen and (max-width: 400px) {
+        justify-content: center;
+    }
 }
 
 .menu__item {
+    margin: 5px 0;
     &:not(:last-child) {
         margin-right: 40px;
+
+        @media screen and (max-width: 600px) {
+            margin-right: 19px;
+        }
     }
 }
 
@@ -86,8 +124,11 @@
 .menu__dropdown-list {
     display: none;
     position: absolute;
-    top: 30px;
+    top: 35px;
     right: -30px;
+    padding: 20px;
+    background-color: #283036;
+    border-radius: 10px;
 }
 
 .menu__item--dropdown.menu__item--active .menu__link svg {
@@ -135,6 +176,18 @@
 
     &:not(:last-child) {
         margin-bottom: 30px;
+
+        @media screen and (max-width: 600px) {
+            margin-bottom: 15px;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        font-size: 34px;
+    }
+
+    @media screen and (max-width: 400px) {
+        font-size: 27px;
     }
 }
 
@@ -143,6 +196,10 @@
 
     &:not(:last-child) {
         margin-bottom: 60px;
+
+        @media screen and (max-width: 600px) {
+            margin-bottom: 30px;
+        }
     }
 }
 
@@ -157,8 +214,11 @@
         width: 24px;
         height: 24px;
         left: 21px;
-        top: 50%;
-        transform: translateY(-50%);
+        top: 20px;
+
+        @media screen and (max-width: 400px) {
+            left: 10px;
+        }
     }
 }
 
