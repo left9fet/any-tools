@@ -401,7 +401,7 @@
 
 .updates__btn {
     display: inline-block;
-    background-color: #ff6e30;
+    background-color: #FF6E30;
     border-radius: 8px;
     color: #fdf5ff;
     font-weight: 600;
@@ -565,7 +565,7 @@
 
 .join {
     margin: 200px 0;
-    
+
     &__container {
         max-width: 575px;
     }
@@ -574,5 +574,69 @@
 .join__heading {
     &:not(:last-child) {
         margin-bottom: 100px;
+    }
+}
+
+
+// FOOTER ================================================
+
+
+.footer {
+    padding: 70px 0 100px;
+    border-top: 1px solid #404040;
+}
+
+.footer__inner {
+    display: flex;
+    margin: -20px -10px;
+}
+
+.footer__column {
+    padding: 20px 10px;
+    flex: 0 1 20%;
+
+    &--info {
+        flex: 0 1 40%;
+    }
+}
+
+.footer__logo {
+    display: inline-block;
+
+    &:not(:last-child) {
+        margin-bottom: 25px;
+    }
+}
+
+.footer__text {
+    font-size: 14px;
+    line-height: 25px;
+    max-width: 250px;
+}
+
+.footer__column-title {
+    color: #E8E9EA;
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+.footer__item {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #9A9DA0;
+
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+
+.footer__link {
+    transition: color 0.3s;
+
+    &:hover {
+        color: #FF6E30;
     }
 }
