@@ -558,3 +558,21 @@
         }
     }
 }
+
+
+// JOIN ================================================
+
+
+.join {
+    margin: 200px 0;
+    
+    &__container {
+        max-width: 575px;
+    }
+}
+
+.join__heading {
+    &:not(:last-child) {
+        margin-bottom: 100px;
+    }
+}
