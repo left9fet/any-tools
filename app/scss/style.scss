@@ -248,11 +248,18 @@
 
 
 .popular {
-    margin: 200px 0;
 }
 
 .popular__heading {
     margin-bottom: 90px;
+
+    @media screen and (max-width: 1040px) {
+        margin-bottom: 60px;
+    }
+
+    @media screen and (max-width: 700px) {
+        margin-bottom: 40px;
+    }
 }
 
 .popular__inner {
@@ -262,12 +269,33 @@
 
     &:not(:last-child) {
         padding-bottom: 100px;
+
+        @media screen and (max-width: 1040px) {
+            padding-bottom: 70px;
+        }
+
+        @media screen and (max-width: 700px) {
+            padding-bottom: 50px;
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        margin: -15px -12.5px;
     }
 }
 
 .popular__column {
     flex: 0 1 33.333%;
     padding: 50px 12.5px;
+
+    @media screen and (max-width: 1040px) {
+        flex: 0 1 50%;
+    }
+
+    @media screen and (max-width: 700px) {
+        flex: 0 1 100%;
+        padding: 15px 12.5px;
+    }
 }
 
 .card {
@@ -399,7 +427,6 @@
 
 
 .partners {
-    margin: 200px 0;
 }
 .partners__box {
     background-color: #21282F;
@@ -431,7 +458,6 @@
 
 
 .updates {
-    margin: 200px 0;
 }
 
 .updates__inner {
@@ -501,7 +527,6 @@
 
 
 .team {
-    margin: 200px 0;
 
     .slick-arrow {
         position: absolute;
@@ -624,7 +649,6 @@
 
 
 .join {
-    margin: 200px 0;
 
     &__container {
         max-width: 575px;
