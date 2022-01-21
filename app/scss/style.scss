@@ -432,6 +432,11 @@
     background-color: #21282F;
     border-radius: 25px;
     padding: 55px;
+
+    @media screen and (max-width: 800px) {
+        padding: 30px;
+        border-radius: 15px;
+    }
 }
 .partners__title {
     text-align: center;
@@ -440,17 +445,46 @@
     line-height: 36px;
     color: #FDF5FF;
 
+    @media screen and (max-width: 600px) {
+        font-size: 18px;
+    }
+
     &:not(:last-child) {
         margin-bottom: 55px;
+
+        @media screen and (max-width: 800px) {
+            margin-bottom: 40px;
+        }
+
+        @media screen and (max-width: 400px) {
+            margin-bottom: 30px;
+        }
     }
 }
 .partners__list {
     display: flex;
     justify-content: space-between;
-    margin: 0 -15px;
+    margin: -15px;
+
+    @media screen and (max-width: 800px) {
+        flex-wrap: wrap;
+    }
 }
+
 .partners__item {
-    padding: 0 15px;
+    padding: 15px;
+
+    @media screen and (max-width: 800px) {
+        flex: 0 1 50%;
+    }
+
+    @media screen and (max-width: 400px) {
+        flex: 0 1 100%;
+    }
+
+    img {
+        margin: 0 auto;
+    }
 }
 
 
