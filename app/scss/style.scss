@@ -611,6 +611,10 @@
 .join__heading {
     &:not(:last-child) {
         margin-bottom: 100px;
+
+        @media screen and (max-width: 1040px) {
+            margin-bottom: 40px;
+        }
     }
 }
 
