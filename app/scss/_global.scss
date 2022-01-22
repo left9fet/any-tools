@@ -4,13 +4,16 @@ body {
     line-height: 1.66;
     color: #CDCFD0;
     background-color: #1E252B;
-    overflow-x: hidden;
 }
 
 ._container {
     max-width: 1244px;
     padding: 0 10px;
     margin: 0 auto;
+}
+
+._wrap {
+    overflow-x: hidden;
 }
 
 ._section {
