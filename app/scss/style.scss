@@ -247,8 +247,6 @@
 // POPULAR ================================================
 
 
-.popular {
-}
 
 .popular__heading {
     margin-bottom: 90px;
@@ -322,8 +320,6 @@
 // PARTNERS ================================================
 
 
-.partners {
-}
 .partners__box {
     background-color: #21282F;
     border-radius: 25px;
@@ -387,8 +383,6 @@
 // UPDATES ================================================
 
 
-.updates {
-}
 
 .updates__inner {    
     @media screen and (min-width: 1040px) {
@@ -740,7 +734,6 @@
 }
 
 .spoilers__title {
-    padding-bottom: 10px;
     span {
         position: relative;
         padding-left: 30px;
@@ -783,7 +776,7 @@
     }
 
     &.footer__column-title {
-        margin: 0;
+        margin-bottom: 10px;
     }
 }
 

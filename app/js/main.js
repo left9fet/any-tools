@@ -16,9 +16,6 @@ $(function() {
                 breakpoint: 998,
                 settings: {
                     arrows: false,
-                    // centerMode: true,
-                    // centerPadding: '40px',
-                    // slidesToShow: 3
                 }
             }
         ]
