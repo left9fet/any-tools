@@ -727,6 +727,12 @@
     padding-top: 20px;
 }
 
+.spoilers {
+    @media screen and (min-width: 600px) {
+        display: none;
+    }
+}
+
 .spoilers__item {
     &:not(:last-child) {
         margin-bottom: 20px;
