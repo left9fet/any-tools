@@ -24,4 +24,8 @@ $(function() {
         ]
     });
 
+    $('.spoilers__title').on('click', function() {
+        $(this).toggleClass('spoilers__title--active').next().slideToggle(300);
+    })
+
 });
